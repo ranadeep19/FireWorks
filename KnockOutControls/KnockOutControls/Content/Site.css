@@ -1,0 +1,87 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.multiSelectDefaultDimensions {
+    width: inherit;
+    height: calc(100% - 3px);
+    max-height: inherit;
+    min-height: inherit;
+}
+
+.multiSelectDropDownDimensions{
+    width:calc(100% - 1px);
+    height:inherit;
+    max-height:calc(100% - 70px); 
+    min-height:inherit;
+    white-space:nowrap;
+    margin-bottom:5px;
+}
+
+.multiSelect-text:focus, 
+.multiSelect-text:hover {
+    border: solid 1px #0072C6;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.3);
+    margin-top: 2px; margin-bottom: 10px;
+}
+.multiSelect-text {
+    margin-top: 2px; 
+    margin-bottom: 10px;
+    height:25px;
+}
+
+.multiSelect-border {
+    border-color: #dadada;
+    border-style:solid;
+    border-width:1px;
+    width:inherit;
+}
+.multiSelect-input {
+    padding-left:10px;
+}
+
+.multiSelect-arrow{
+
+    background-image: url("../Content/Images/sprite.png");
+    background-position-y: -32px;
+    background-position-x: 0px;
+    background-repeat: no-repeat;
+    float:right;
+    height:16px;
+    width:16px;
+}
+.multiSelect-list{
+    list-style-type:none;
+    padding-left:10px;
+    padding-top:5px;
+    overflow: auto;
+}
+.multiSelect-button {
+    border-width:1px;
+    border-color:#dadada;
+    width:60px;
+    float:right;
+    margin-right:5px;
+}
+.multiSelect-popup {
+    overflow: visible; 
+    position: absolute; 
+    z-index: 10002; 
+    display:none; 
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.3);
+    background-color: #FFFFFF;
+}
+.multiSelect-popup-next
+{
+    overflow: visible;
+    width:calc(100% - 3px);
+    padding-left:5px;
+    padding-top:5px;
+}

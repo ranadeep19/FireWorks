@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+ <strong style="white-space: nowrap;">First drop down is having 10,000 records.</strong>
+<br />
+<strong style="white-space: nowrap;">Second drop down is populated based on the selection of the first drop down.</strong>
+<br />
+<br />
+<table>
+    <tr>
+        <td>
+            <strong style="white-space: nowrap;">Multi-Select Drop Down</strong></td>
+        <td>
+            <multi-select-with-auto-complete id="multiSelect"
+                params="dataPassed             :MultiSelectDataPassed,
+                                                           addAllOption:true,
+                                defaultSelection                      :'All',
+                                selected                              :MultiSelectSelected
+                                                        "
+                style="height: auto; max-height: 400px; width: 400px"></multi-select-with-auto-complete>
+        </td>
+        <td>
+            <span style="white-space:nowrap" data-bind="text: MultiSelectSelection"></span>
+        </td>
+    </tr>
+    <tr><td> <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> </td></tr>
+    <tr>
+        <td>
+            <strong style="white-space: nowrap;">Single-Select Drop Down</strong></td>
+        <td>
+            <multi-select-with-auto-complete id="singleSelect"
+                params="dataPassed             :SingleSelectDataPassed,
+                                selectSingle: true,
+                 selected                              :SingleSelectSelected,
+                dataBindCount:200
+
+                                                        "
+                style="height: auto; max-height: 400px; width: 400px"></multi-select-with-auto-complete>
+        </td>
+        <td>
+             <span data-bind="text: SingleSelectSelection"></span>
+        </td>
+    </tr>
+</table>
+<link href="../../Content/Site.css" rel="stylesheet" />
+<script src="../../Scripts/typings/knockout/CustomBinding.js"></script>
+<script src="../../Scripts/CommonKnockOutControls/ucMultiSelectDropDownWithAutoComplete.js"></script>
+<script src="../../Scripts/Pages/Index/Index.js"></script>
